@@ -193,7 +193,7 @@ def main(_):
 		log_trial(total_time)
 		plot_hist(d_loss_arr, g_loss_arr)
 		make_gif()
-		os.system('systemctl poweroff')
+		#os.system('systemctl poweroff') #For long training sessions
 
 
 def sample_images(epoch, sess):
